@@ -1,8 +1,5 @@
-import { getinput, sort, show, show2 ,navbar} from "../component/navbar.js";
+import { getinput, sort, show, show2 } from "../component/navbar.js";
 import "../styles/style.css";
-
-
-document.querySelector('#nav').innerHTML=navbar();
 
 let nav1 = document.querySelector("#childrens").children;
 
