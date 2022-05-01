@@ -96,21 +96,6 @@ const navbar = () =>{
 </div>`
 }
 
-const navbar2 = () =>{
-  return `  <p id="cat">Cat</p>
-  <p id="current">Current Events</p>
-  <p id="wallpapers">Wallpapers</p>
-  <p id="Beach">Beach</p>
-  <p id="textures">Textures & Patterns</p>
-  <p id="cars">Cars</p>
-  <p id="architecture">Arcitecture</p>
-  <p id="nature">Nature</p>
-  <p id="business">Business & Work</p>
-  <p id="fashion">Fashion</p>
-  <p id="film">Film</p>
-  <p id="food">Food & Drink</p>
-  <p id="interors">Interors</p>`
-}
 
 
-export { getinput, sort, show, show2 ,navbar,navbar2};
+export { getinput, sort, show, show2 ,navbar};
