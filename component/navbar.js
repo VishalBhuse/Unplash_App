@@ -32,12 +32,12 @@ const getdata = async (url) => {
 };
 
 const append1 = (data) => {
-  let show = (document.getElementById("descr").innerHTML = null);
-  data.map(function (element) {
-    let image = document.createElement("img");
-    image.src = element.urls.small;
-    image.style.width = "100%";
+  document.getElementById("descr").innerHTML = null;
+  data.forEach( (el)=> {
     let div = document.createElement("div");
+    let image = document.createElement("img");
+
+    image.src = el.urls.small;
     div.append(image);
     document.getElementById("descr").append(div);
   });
@@ -51,7 +51,6 @@ const mainpara = (word, sort, filt) => {
 
 
 function show() {
-  event.preventDefault();
   localStorage.setItem("word", JSON.stringify(this.id));
 
   sort();
@@ -59,7 +58,6 @@ function show() {
 }
 
 function show2() {
-  event.preventDefault();
   localStorage.setItem("filter", JSON.stringify(this.id));
 
   sort();
@@ -69,10 +67,8 @@ function show2() {
 const sort = () => {
   let word = JSON.parse(localStorage.getItem("word"));
   let filt = JSON.parse(localStorage.getItem("filter")) || "squarish";
-  // console.log(word);
   let sort = document.getElementById("sort-select").value;
 
-  // console.log(sort);
   mainpara(word, sort, filt);
 }
 
