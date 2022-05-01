@@ -1,0 +1,102 @@
+
+
+
+  .nav{
+    display: flex;
+    justify-content: start;
+}
+.nav div{
+    margin-left: 20px;
+}
+.firstone{
+    margin-top: 20px;
+}
+.first{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.first i{
+    font-size: 20px;
+    margin: 9px;
+    position: relative;
+    z-index: 1;
+}
+
+.first input{
+    font-size: 19px;
+    width: 600px;
+    height: 30px;
+    position:absolute;
+    padding-left:  40px;
+    border-radius: 15px;
+    border: solid 1px;
+}
+.first svg{
+    position: relative;
+    left: 800%;
+
+}
+
+.second{
+    position: relative;
+    display: flex;
+    left:45%;
+    font-size: 18px;            
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.second p,button,i{
+    margin-left: 25px;
+}
+.second button{
+    padding: 5px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+#descr{
+    /* background-color: red; */
+    width: 100%;
+    /* margin: auto; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#descr img{
+    width: 100%;
+}
+.sortings{
+    width: 100%;
+    margin: 20px auto;
+}
+#sortings{
+    display: flex;
+    justify-content: space-around;
+}
+#sortings h5{
+    margin-left: 20px;
+}
+#filtersoption{
+    margin: 20px;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+}
+#filtersoption1 a{
+    margin-left: 95px;
+    cursor: pointer;
+}
+#filtersoption2 {
+    margin-right: 30px;
+}
+#filtersoption2 select{
+    font-size: 20px;
+    padding: 4px 15px;
+}
